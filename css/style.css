@@ -99,6 +99,7 @@ p,
 
 .web-logo {
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-nav,
 .list.nav {
@@ -128,6 +129,7 @@ p,
   background-color: var(--footer-color);
   background-image: linear-gradient(to right, #2f303a66 40%, #2f303a66 60%), url(../images/img.jpg);
   padding: 200px 0px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* h1 */
 .title {
@@ -139,6 +141,8 @@ p,
 
   line-height: 1.36;
   font-weight: var(--large-font-weight);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .titles {
   font-size: 36px;
@@ -149,7 +153,7 @@ p,
 /* image names */
 .names {
   text-align: center;
-  padding: 30px 32px 16px 32px;
+  padding: 30px 32px 30px 32px;
 }
 
 .item.team {
@@ -157,6 +161,9 @@ p,
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* portfolio menu flex */
@@ -234,6 +241,7 @@ p,
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0%);
   /* opacity: 0; */
   z-index: 0;
@@ -249,7 +257,8 @@ p,
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -273,7 +282,8 @@ p,
 
   transform: translate(-50%, -50%) scale(0.9);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close {
@@ -285,6 +295,7 @@ p,
   background-image: url(/images/close.svg);
   background-position: top right;
   background-color: var(--primary-backround-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   margin-top: 8px;
   margin-right: 8px;
@@ -293,6 +304,7 @@ p,
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list.wrapper .item {
@@ -327,6 +339,7 @@ p,
 .description {
   font-size: 16px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .description-text {
   font-size: 14px;
@@ -382,7 +395,8 @@ p,
   font-size: 16px;
   font-family: inherit;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .button:hover,
@@ -401,6 +415,9 @@ p,
   color: var(--primary-backround-color);
   background-color: var(--accent-color);
   font-weight: var(--bold-font-weight);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-title > .list.flex {
@@ -430,8 +447,8 @@ p,
 
 .list.nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 38px;
+  padding-bottom: 38px;
 }
 
 .portfolio-btn {
@@ -455,6 +472,9 @@ p,
   color: var(--primary-backround-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn:hover,
@@ -467,6 +487,7 @@ p,
 .current {
   position: relative;
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
   position: absolute;
@@ -475,6 +496,7 @@ p,
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   bottom: 0;
   left: 0;
   border-radius: 4px;
@@ -482,6 +504,7 @@ p,
 
 .team {
   background-color: var(--secondary-background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -494,6 +517,7 @@ p,
 .title-text,
 .item-text {
   color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-address {
   text-decoration: none;
@@ -548,6 +572,7 @@ p,
   background-color: var(--secondary-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .features-logo {
@@ -557,11 +582,9 @@ p,
 /* social links+logo */
 .social-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
-  margin-top: 16px;
-  margin-bottom: 14px;
   list-style: none;
 }
 
@@ -572,6 +595,7 @@ p,
 
 .social-logo.footer {
   fill: var(--primary-backround-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .social-item {
   padding: 12px;
@@ -589,6 +613,12 @@ p,
 .social-item .social-link.clients:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
+
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-link:hover .social-logo,
 .social-link:focus .social-logo {
@@ -598,9 +628,10 @@ p,
   margin-right: 10px;
 }
 
-.social-link.cover {
+/* .social-link.cover {
   background-color: var(--accent-color);
-}
+  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 .social-link {
   text-decoration: none;
@@ -608,10 +639,15 @@ p,
   padding: 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-wrapper {
   margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 35px;
 }
 
 .join {
@@ -623,8 +659,8 @@ p,
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 10px;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.footer {
@@ -656,16 +692,19 @@ p,
 .title-text {
   line-height: inherit;
   font-weight: var(--medium-font-weight);
+  margin-bottom: 16px;
 }
 .location {
   font-size: 14px;
   color: var(--primary-backround-color);
   margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .wrapper-footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-footer {
   width: 1200px;
@@ -692,6 +731,8 @@ p,
   text-align: center;
   color: var(--primary-backround-color);
   background-color: rgba(47, 48, 58, 0.8);
+  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title.portfolio {
