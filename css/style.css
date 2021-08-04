@@ -539,8 +539,8 @@ p,
 .nav-item:focus,
 .features-logo:hover,
 .features-logo:focus,
-.social-logo.labels:hover,
-.social-logo.labels:focus {
+.social-logo:hover,
+.social-logo:focus {
   fill: var(--accent-color);
 }
 
@@ -636,6 +636,8 @@ p,
 .social-link {
   text-decoration: none;
   display: block;
+  width: 44px;
+  height: 44px;
   padding: 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
