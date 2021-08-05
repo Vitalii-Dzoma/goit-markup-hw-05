@@ -269,15 +269,8 @@ p,
   pointer-events: none;
 }
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .backdrop.is-hidden .modal {
-  transform: scale(1) translate(-50%, -50%);
+  transform: scale(1.1) translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
